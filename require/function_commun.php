@@ -314,7 +314,7 @@ function html_header($noJavascript = false) {
     header("Cache-control: must-revalidate, post-check=0, pre-check=0");
     header("Cache-control: private", false);
     header("Content-type: text/html; charset=utf-8");
-    echo '<!--DOCTYPE html-->
+    echo '< DOCTYPE html>
         <html>
 			<head>
    				<meta charset="utf-8">
@@ -421,7 +421,7 @@ function get_update_json() {
     }
 }
 
-function formGroup($inputType, $inputName, $name, $size, $maxlength, $inputValue = "", $class = "", $optionsSelect = [], $arrayDisplayValues = [], $attrBalise = "", $groupAddon = ""){
+function formGroup($inputType, $inputName, $name, $size, $maxlength, $inputValue = "", $class = "", $optionsSelect = array(), $arrayDisplayValues = array(), $attrBalise = "", $groupAddon = ""){
 	echo "<div class='form-group'>";
 	echo "<label class='control-label col-sm-2' for='".$inputName."'>".$name."</label>";
 	echo "<div class='col-sm-10'>";
